@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  *main - print the last digit of the number stored in the variable n
- *return: 0 for success and exit
- * */
+ *Return: 0 for success and exit
+ */
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %d is ", n);
+	printf("Last digit of %d is ",n);
 	if (n > 5)
 	{
 		printf("and is greater than 5");
@@ -25,5 +25,6 @@ int main(void)
 	{
 		printf("and is less than 6 and not 0");
 	}
+	printf("\n");
 	return (0);
 }
