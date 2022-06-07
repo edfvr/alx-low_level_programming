@@ -7,10 +7,13 @@
 
 int main(void)
 {
-       	int i;
-       	for (i = 97; i <= 122; i++)
-       	{
-		putchar(i);
+	char i;
+	for(i = 'a'; i <= 'z'; i++)
+	{
+		if (i != 'q' && i != 'e')
+		{
+			putchar(i);
+		}
 	}
 	putchar(10);
 	return (0);
