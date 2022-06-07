@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
@@ -16,6 +17,6 @@ int main(void)
 			putchar(32);
 		}
 	}
-	putchar(10);
+	putchar (10);
 	return (0);
 }

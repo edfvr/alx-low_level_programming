@@ -7,17 +7,19 @@
 int main(void)
 {
 	int j;
+
 	char i;
+
 	for (j = 48; j <= 57; j++)
 	{
 		putchar(j);
 	}
 
-	for (i = 'A'; i <= 'F'; i++)
+	for (i = 'a'; i <= 'f'; i++)
 	{
 		putchar(i);
 	}
-	putchar(10);
-	return(0);
+	putchar (10);
+	return (0);
 }
 
