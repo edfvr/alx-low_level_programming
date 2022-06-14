@@ -1,6 +1,5 @@
-#ifdef MAIN.H
-#define MAIN.H
-int _putchar(char c);
-
+#ifdef MAIN_H
+#define MAIN_H
+iint _putchar(char c);
 
 #endif
