@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - print _putchar
- * Return: 0 for success 
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -12,6 +12,6 @@ int main(void)
 	{
 		_putchar(s[i]);
 	}
-	_putchar('\n');		    
-	return 0;
+	_putchar('\n');
+	return (0);
 }
