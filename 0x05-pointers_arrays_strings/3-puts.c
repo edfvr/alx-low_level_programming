@@ -2,13 +2,15 @@
 
 /**
  * puts - prints a string, followed by a new line, to stdout.
- * @str: a parameter of the _put functions
+ * @str : pointer to str
  */
 void _puts(char *str)
 {
-	for (; *str != '0/'; str++)
-	{
-		_putchar(*str);
+		int i;
+
+		for (i = 0; str[i] != '\0'; i++)
+		{
+				_putchar(str[i]);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-}
