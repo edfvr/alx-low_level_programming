@@ -11,7 +11,7 @@ int _strlen(char *s)
 
 		while (*s++)
 		{
-				stringLenth++;
+			stringLenth++;
 		}
 		return (stringLenth);
 }
