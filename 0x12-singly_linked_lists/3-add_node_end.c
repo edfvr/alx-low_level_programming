@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * add_node_end - adds a new node at the end of a list_t list
@@ -11,34 +11,42 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_list;
 	list_t *tmp;
+	size_t i = 0;
 
-	if (str != NULL)
+	new_list = malloc(sizeof(list_t));
+	
+	if (new_list == NULL)
 	{
+		free(new_list);
 		return (NULL);
-		new_list = malloc(sizeof(list_t));
+	}
 
-		if (new_list != NULL)
-		{
-			return (NULL);
-		}
+	for (i = 0; str[i]; i++);
 
+	if (strdup(str))
+	{
 		new_list->str = strdup(str);
-		new_list->len = _strlen(str);
-		new_list->next = NULL;
-		if (*head == NULL)
+	}
+	else
+	{
+		new_list->str = NULL;
+	}
+
+	new_list->len = i;
+	new_list->next = NULL;
+	if (*head == NULL)
+	{
+		*head = new_list;
+		return (*head);
+	}
+	else
+	{
+		tmp = *head;
+		while (tmp->next != NULL)
 		{
-			*head = new_list;
-			return (*head);
+			tmp = tmp->next;
 		}
-		else
-		{
-			tmp = *head;
-			while (tmp->next)
-			{
-				tmp = tmp->next;
-			}
-			tmp->next = new_list;
-			return (tmp);
-		}
+		tmp->next = new_list;
+		return (tmp);
 	}
 }
