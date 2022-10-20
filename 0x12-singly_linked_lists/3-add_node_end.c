@@ -4,29 +4,30 @@
  * add_node_end - adds a new node at the end of a list_t list
  * @head : head of list_t
  * @str : string
- * Return: the address of the new element, or NULL if it failed
+ * Return: the address of the new element, 
+ * or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node;
+	list_t *new_list;
 	list_t *tmp;
 
 	if (str != NULL)
 	{
 		return (NULL);
-		new_node = malloc(sizeof(list_t));
+		new_list = malloc(sizeof(list_t));
 
-		if (new_node != NULL)
+		if (new_list != NULL)
 		{
 			return (NULL);
 		}
 
-		new_node->str = strdup(str);
-		new_node->len = _strlen(str);
-		new_node->next = NULL;
+		new_list->str = strdup(str);
+		new_list->len = _strlen(str);
+		new_list->next = NULL;
 		if (*head == NULL)
 		{
-			*head = new_node;
+			*head = new_list;
 			return (*head);
 		}
 		else
@@ -36,7 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			{
 				tmp = tmp->next;
 			}
-			tmp->next = new_node;
+			tmp->next = new_list;
 			return (tmp);
 		}
 	}
