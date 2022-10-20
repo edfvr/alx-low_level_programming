@@ -20,7 +20,11 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
+<<<<<<< HEAD
 int _strlen(char *s);
+=======
+int _strlen(const char *str);
+>>>>>>> 323ea4bbc2a3d4fa94f6f2eac3418c288828b87b
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);

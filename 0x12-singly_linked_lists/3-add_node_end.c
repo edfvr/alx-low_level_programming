@@ -49,4 +49,21 @@ list_t *add_node_end(list_t **head, const char *str)
 		tmp->next = new_list;
 		return (tmp);
 	}
+	return (NULL);
+}
+
+/**
+ * _strlen - returns the length of a string.
+ * @s: string pointer
+ * Return: the string's length
+ */
+int _strlen(const char *str)
+{
+int stringLength = 0;
+
+while (*str++)
+{
+stringLength++;
+}
+return (stringLength);
 }
