@@ -4,21 +4,23 @@
  * pop_listint -  deletes the head node of
  * a listint_t linked list, and returns the head node’s data (n).
  * @head : pointer to the head
+ * Return: the head node’s data (n)
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *tmp;
+	int i;
 
-	if (head == NULL)
+	if (!(*head))
 	{
-		return;
+		return (0);
 	}
 
-	while (*head != 0)
-	{
-		tmp = (*head)->next;
-		free(*head);
-		*head = tmp;
-	}
-	*head = NULL;
+	tmp = *head
+	i = tmp->n;
+	tmp = tmp->next;
+	
+	free(*head);
+	*head = tmp;
+	return (i);
 }
