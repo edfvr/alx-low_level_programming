@@ -7,3 +7,6 @@ _putchar.c
 
 #ignore files ending with main.c
 *main.c
+
+#Swap files
+*.swp
