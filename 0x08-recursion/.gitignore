@@ -1,0 +1,8 @@
+#ignore ALL .exe files
+*.exe
+
+#ignore _putchar.c
+_putchar.c
+
+#ignore files ending with main.c
+*main.c
