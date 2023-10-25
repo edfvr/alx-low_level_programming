@@ -1,5 +1,6 @@
-#ignore ALL .exe files
+#ignore ALL .exe files and executables
 *.exe
+*.out
 
 #ignore _putchar.c
 _putchar.c
