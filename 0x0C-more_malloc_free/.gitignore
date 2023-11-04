@@ -1,3 +1,5 @@
-#All main.c files
+# All main.c files
 *-main.c
+
+# All C executables
 *.out
