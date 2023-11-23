@@ -1,6 +1,12 @@
 # All executable file
 *.out
 *.exe
+a
+b
+c
+d
+e
+f
 
 # All test files
 *-main.c
