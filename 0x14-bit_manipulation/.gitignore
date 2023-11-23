@@ -1,0 +1,6 @@
+# All executable file
+*.out
+*.exe
+
+# All test files
+*-main.c
