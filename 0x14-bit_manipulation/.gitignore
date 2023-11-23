@@ -1,5 +1,7 @@
 _putchar.c
 
+*.swp
+
 # All executable file
 *.out
 *.exe
